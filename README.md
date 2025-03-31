@@ -3,7 +3,7 @@
 Este repositorio contiene el sitio web oficial de **enbataDev**, una iniciativa para crear aplicaciones útiles, centradas en la eficiencia, la tecnología y el desarrollo sostenible.
 
 ## 🔗 Sitio en vivo
-[https://<tu_usuario>.github.io/enbataDev](https://<tu_usuario>.github.io/enbataDev)
+[https://enbatadev.github.io/enbataDev](https://enbatadev.github.io/enbataDev)
 
 ## 📱 Aplicaciones
 
