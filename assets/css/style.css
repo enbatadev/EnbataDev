@@ -141,3 +141,22 @@ footer {
   font-size: 0.9rem;
   margin-top: 3rem;
 }
+
+/* Responsive header para móviles */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header nav {
+    margin-top: 1rem;
+    padding-top: 0;
+  }
+
+  .header nav a {
+    display: inline-block;
+    margin: 0.25rem 0.5rem;
+  }
+}
