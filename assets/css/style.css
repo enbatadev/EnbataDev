@@ -118,6 +118,10 @@ img {
   background-color: #4aa52f;
 }
 
+.center {
+  text-align: center;
+}
+
 /* Capturas */
 .screenshots {
   display: grid;
