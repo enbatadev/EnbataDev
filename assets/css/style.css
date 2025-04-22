@@ -5,7 +5,6 @@
   --text-light: #f9f9f9;
 }
 
-/* Reset y base */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -19,7 +18,6 @@ img {
   height: auto;
 }
 
-/* Header */
 .header {
   background: linear-gradient(90deg, var(--dark), #2d2d2d);
   padding: 2rem;
@@ -73,7 +71,6 @@ img {
   text-align: center;
 }
 
-/* Secciones */
 .section {
   padding: 3rem 1rem;
   max-width: 1000px;
@@ -87,7 +84,6 @@ img {
   color: var(--primary);
 }
 
-/* Tarjetas */
 .card {
   background: white;
   border-radius: 12px;
@@ -102,7 +98,6 @@ img {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Botón */
 .button {
   display: inline-block;
   margin-top: 1rem;
@@ -119,11 +114,6 @@ img {
   background-color: #4aa52f;
 }
 
-.center {
-  text-align: center;
-}
-
-/* Capturas */
 .screenshots {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -136,7 +126,6 @@ img {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Footer */
 footer {
   background: #2d2d2d;
   color: white;
@@ -146,7 +135,10 @@ footer {
   margin-top: 3rem;
 }
 
-/* Responsive header para móviles */
+.center {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .header-top {
     flex-direction: column;
@@ -163,9 +155,7 @@ footer {
     display: inline-block;
     margin: 0.25rem 0.5rem;
   }
-}
 
-@media (max-width: 768px) {
   .header {
     padding: 1.5rem 1rem;
   }
@@ -193,7 +183,6 @@ footer {
   }
 }
 
-
 html, body {
   height: 100%;
   display: flex;
@@ -209,3 +198,4 @@ main {
     padding-bottom: 4rem;
   }
 }
+
