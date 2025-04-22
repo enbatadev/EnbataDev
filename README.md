@@ -53,3 +53,80 @@ https://<usuario>.github.io/<repositorio>/
 ---
 
 © 2025 enbataDev
+
+## 🌐 Estructura multilingüe del sitio
+
+El sitio está preparado para soportar múltiples idiomas. Actualmente se soporta:
+
+- Español (`/es/`)
+- Inglés (`/en/`) – en desarrollo
+
+### 📁 Estructura
+
+```
+/index.html              ← Redireccionador automático por idioma
+/es/index.html           ← Página principal en español
+/en/index.html           ← Página principal en inglés (cuando esté lista)
+/apps/                   ← Aplicaciones en español
+/en/apps/                ← Aplicaciones en inglés (solo si tienen traducción)
+/assets/                 ← Recursos compartidos (CSS, imágenes, etc.)
+```
+
+### 🌍 Navegación
+
+Cada página incluye un conmutador de idioma en la cabecera:
+
+```html
+<nav>
+  <a href="/es/index.html">ES</a> | <a href="/en/index.html">EN</a>
+</nav>
+```
+
+Las nuevas secciones se desarrollarán primero en español y se traducirán gradualmente al inglés.
+
+## 🛠️ Guía técnica para añadir nuevas aplicaciones
+
+### 1. Crear la carpeta de la aplicación
+Dentro del directorio `/apps/`, crea una subcarpeta con el nombre de la app:
+
+```
+/apps/nombreApp/
+```
+
+### 2. Estructura de la app
+Cada app debe tener al menos:
+
+```
+/apps/nombreApp/index.html         ← Página de presentación
+/apps/nombreApp/privacy.html       ← Política de privacidad
+```
+
+### 3. Enlace desde la home
+Añade una tarjeta en `/es/index.html` (o `/en/index.html` si hay traducción), enlazando a la nueva app:
+
+```html
+<div class="card">
+  <h3>NombreApp</h3>
+  <p>Breve descripción de la app.</p>
+  <a class="button" href="/apps/nombreApp/index.html">Ver más</a>
+</div>
+```
+
+### 4. Política de privacidad
+Debe estar accesible solo desde la página de la app. Se coloca en:
+
+```
+/apps/nombreApp/privacy.html
+```
+
+Y se enlaza desde el footer de la app.
+
+### 5. Accesibilidad y buenas prácticas (aplicación automática)
+- Contraste suficiente para enlaces
+- Botones deshabilitados con `aria-disabled="true"`
+- Imágenes con `alt` descriptivo
+- Enlaces a política de privacidad encima del copyright
+
+---
+
+Estas normas aseguran coherencia visual, accesibilidad y escalabilidad en todo el sitio enbataDev.

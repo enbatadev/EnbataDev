@@ -1,42 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>enbataDev - Developer Ecosystem</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>enbataDev - Redirect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.startsWith('es')) {
+      window.location.href = '/es/index.html';
+    } else {
+      window.location.href = '/en/index.html';
+    }
+  </script>
 </head>
 <body>
-  <main>
-    <header class="header">
-      <div class="header-top">
-        <div class="branding">
-          <img src="assets/img/enbataDev.png" alt="Logotipo de enbataDev, desarrollo de apps inteligentes">
-          <h1>enbataDev</h1>
-        </div>
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="apps/ecoluz/index.html">EcoLuz</a>
-        </nav>
-      </div>
-      <p>Impulsando el desarrollo con tecnología inteligente. Creamos herramientas útiles para usuarios y desarrolladores dentro del ecosistema HarmonyOS y más allá.</p>
-    </header>
-
-    <section class="section">
-      <h2>Aplicaciones destacadas</h2>
-      <div class="apps">
-        <div class="card">
-          <h3>EcoLuz</h3>
-          <p>Visualiza precios horarios de electricidad y optimiza el uso de tus electrodomésticos para ahorrar energía.</p>
-          <a class="button" href="apps/ecoluz/index.html" aria-label="Ver más información sobre la app EcoLuz">Ver más</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    © 2025 enbataDev | Todos los derechos reservados
-  </footer>
+  <p>Redirigiendo a tu idioma...</p>
 </body>
 </html>
 
