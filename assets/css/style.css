@@ -100,7 +100,7 @@ img {
 
 .button {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 5rem;
   padding: 0.75rem 1.5rem;
   background-color: var(--primary);
   color: white;
@@ -132,7 +132,7 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  margin-top: 3rem;
+  margin-top: 0.2rem;
 }
 
 .center {
@@ -219,4 +219,97 @@ main {
   margin-left: auto;
   padding-left: 1rem;
   border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.icon-credits {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.icon-credits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.icon-credits li {
+  margin: 0.6rem 0;
+}
+
+.icon-credits a {
+  color: #444;
+  text-decoration: underline;
+}
+
+.icon-credits a:hover {
+  color: var(--primary);
+}
+
+.icon-divider {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.download {
+  margin-bottom: 10rem; /* o más si necesitas mayor separación visual */
+}
+
+
+
+@media (min-width: 1200px) {
+  .screenshots {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .screenshots {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 3rem;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+.card .button {
+  margin-top: 0.5rem;
+}
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+
+
+.card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 0.3rem;
+  text-align: center;
 }
