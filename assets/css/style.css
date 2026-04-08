@@ -84,6 +84,14 @@ img {
   color: var(--primary);
 }
 
+.app-about-section {
+  padding-bottom: 1.5rem;
+}
+
+.app-features-section {
+  padding-top: 1.5rem;
+}
+
 .card {
   background: white;
   border-radius: 12px;
@@ -112,6 +120,21 @@ img {
 
 .button:hover {
   background-color: #4aa52f;
+}
+
+.tester-button {
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  animation: tester-button-glow 2.2s ease-in-out infinite;
+}
+
+@keyframes tester-button-glow {
+  0%, 100% {
+    background-color: var(--primary);
+  }
+  50% {
+    background-color: #76d85c;
+  }
 }
 
 .screenshots {
@@ -174,6 +197,19 @@ footer {
   }
 
   .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .app-about-section {
+    padding-bottom: 1rem;
+  }
+
+  .app-features-section {
+    padding-top: 1rem;
+  }
+
+  .tester-button {
+    padding: 1.25rem 2.5rem;
     font-size: 1.6rem;
   }
 
