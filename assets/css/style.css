@@ -85,11 +85,11 @@ img {
 }
 
 .app-about-section {
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
 }
 
 .app-features-section {
-  padding-top: 1.5rem;
+  padding-top: 0.75rem;
 }
 
 .card {
@@ -126,6 +126,14 @@ img {
   padding: 1.5rem 3rem;
   font-size: 2rem;
   animation: tester-button-glow 2.2s ease-in-out infinite;
+}
+
+.tester-note {
+  max-width: 720px;
+  margin: 0.75rem auto 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: #777;
 }
 
 @keyframes tester-button-glow {
@@ -201,16 +209,20 @@ footer {
   }
 
   .app-about-section {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   .app-features-section {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
   .tester-button {
     padding: 1.25rem 2.5rem;
     font-size: 1.6rem;
+  }
+
+  .tester-note {
+    font-size: 0.72rem;
   }
 
   footer {
